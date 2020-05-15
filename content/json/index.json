@@ -1,0 +1,11 @@
+{
+  "path": "example",
+  "bodyContent": "## example file",
+  "bodyHtml": "<h2>example file</h2>\n",
+  "title": "example file",
+  "dir": "content/json",
+  "base": "index.json",
+  "ext": ".json",
+  "sourceBase": "index.md",
+  "sourceExt": ".md"
+}
