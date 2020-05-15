@@ -1,18 +1,18 @@
 {
   "fileMap": {
-    "content/json/example2/index.json": {
-      "path": "example2",
-      "title": "example2",
-      "dir": "content/json/example2",
+    "content/json/example/index.json": {
+      "path": "example",
+      "title": "example",
+      "dir": "content/json/example",
       "base": "index.json",
       "ext": ".json",
       "sourceBase": "index.md",
       "sourceExt": ".md"
     },
-    "content/json/example/index.json": {
-      "path": "example",
-      "title": "example",
-      "dir": "content/json/example",
+    "content/json/example2/index.json": {
+      "path": "example2",
+      "title": "example2",
+      "dir": "content/json/example2",
       "base": "index.json",
       "ext": ".json",
       "sourceBase": "index.md",
