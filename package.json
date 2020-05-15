@@ -9,7 +9,8 @@
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
-    "lint": "eslint --ext .js,.vue --ignore-path .gitignore ."
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "md": "processmd content/blog/**/*.md --stdout --outputDir ./content/json > ./content/summary.json --watch"
   },
   "lint-staged": {
     "*.{js,vue}": "npm run lint",
@@ -21,7 +22,8 @@
     }
   },
   "dependencies": {
-    "nuxt": "^2.0.0"
+    "nuxt": "^2.0.0",
+    "processmd": "^4.5.0"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^2.0.0",

@@ -1,0 +1,10 @@
+Error: ENOENT: no such file or directory, watch
+    at FSWatcher.start (internal/fs/watchers.js:169:26)
+    at Object.watch (fs.js:1346:11)
+    at C:\Users\evang\products\design-dock\node_modules\processmd\index.js:64:14
+    at processTicksAndRejections (internal/process/task_queues.js:97:5) {
+  errno: -4058,
+  syscall: 'watch',
+  code: 'ENOENT',
+  filename: ''
+}
