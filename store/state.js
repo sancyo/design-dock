@@ -1,5 +1,6 @@
 import fileArray from '../content/summary.json'
 
 export default () => ({
-  itemSorce: fileArray
+  itemSorce: fileArray,
+  sourceFileArray: fileArray.sourceFileArray
 })

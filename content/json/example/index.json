@@ -1,0 +1,11 @@
+{
+  "path": "example",
+  "title": "example",
+  "bodyContent": "## example file \r\n## hello\r\n## hello\r\n## hello\r\n## hello\r\n## hello\r\n\r\n## hello",
+  "bodyHtml": "<h2>example file</h2>\n<h2>hello</h2>\n<h2>hello</h2>\n<h2>hello</h2>\n<h2>hello</h2>\n<h2>hello</h2>\n<h2>hello</h2>\n",
+  "dir": "content/json/example",
+  "base": "index.json",
+  "ext": ".json",
+  "sourceBase": "index.md",
+  "sourceExt": ".md"
+}

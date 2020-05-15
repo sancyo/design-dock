@@ -1,9 +1,9 @@
 {
-  "path": "example",
+  "path": "example2",
+  "title": "example2",
   "bodyContent": "## example file",
   "bodyHtml": "<h2>example file</h2>\n",
-  "title": "example file",
-  "dir": "content/json",
+  "dir": "content/json/example2",
   "base": "index.json",
   "ext": ".json",
   "sourceBase": "index.md",
