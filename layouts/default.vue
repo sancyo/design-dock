@@ -1,15 +1,18 @@
 <template>
   <div>
     <the-page-header />
+    <dock-list />
     <nuxt />
   </div>
 </template>
 
 <script>
 import ThePageHeader from '@/layouts/ThePageHeader'
+import DockList from '@/components/organisms/DockList'
 export default {
   components: {
-    ThePageHeader
+    ThePageHeader,
+    DockList
   }
 }
 </script>
@@ -26,6 +29,13 @@ h1,
 h2,
 h3,
 p {
+  margin: 0;
+}
+
+ul,
+li {
+  list-style-type: none;
+  padding: 0;
   margin: 0;
 }
 
