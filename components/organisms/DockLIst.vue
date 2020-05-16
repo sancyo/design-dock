@@ -27,7 +27,6 @@ export default {
 <style scoped>
 .dock-list {
   display: flex;
-  justify-content: space-between;
-  margin: 1.6rem 0.8rem;
+  margin: 3.2rem 0.8rem;
 }
 </style>

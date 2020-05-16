@@ -29,26 +29,29 @@ export default {
 <style scoped>
 .dock-item {
   display: inline-block;
-  width: 17rem;
-  height: 17rem;
+  width: 10rem;
+  height: 10rem;
   background-color: #fff;
-  border-radius: 15px;
+  border-radius: 10px;
   box-sizing: border-box;
+  text-align: center;
   position: relative;
+  margin-right: 1.6rem;
 }
 
 .wrap {
   position: absolute;
-  bottom: 2.8rem;
-  left: 2.4rem;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 .dock-icon {
-  width: 6rem;
+  width: 4rem;
 }
 .dock-name {
-  font-size: 2rem;
+  font-size: 1.4rem;
   font-weight: bold;
-  margin-top: 0.8rem;
 }
 </style>
