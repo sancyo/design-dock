@@ -1,6 +1,8 @@
 ---
 path: example
-title: example
+title: ここにタイトルが入ります
+tag: Vue.js
+date: 2020/05/15
 ---
 
 ## example file 

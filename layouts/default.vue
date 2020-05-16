@@ -39,6 +39,12 @@ li {
   margin: 0;
 }
 
+a,
+a:active {
+  text-decoration: none;
+  color: #323232;
+}
+
 .container {
   margin: 0 auto;
 }

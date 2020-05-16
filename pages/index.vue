@@ -1,28 +1,24 @@
 <template>
   <div class="container">
-    <div class="content-inner">
-      <article v-for="item in blogItems" :key="item.id">
-        <nuxt-link
-          :to="{
-            name: 'title',
-            params: { title: item.title, path: item.path }
-          }"
-          >{{ item.title }}
-        </nuxt-link>
-      </article>
+    <div class="inner content-inner">
+      <h2 class="package">Package</h2>
+      <post-bundle />
     </div>
   </div>
 </template>
 
 <script>
+import PostBundle from '@/components/organisms/PostBundle'
 export default {
-  components: {},
-  computed: {
-    blogItems() {
-      return this.$store.getters.getItemList.fileMap
-    }
+  components: {
+    PostBundle
   }
 }
 </script>
 
-<style></style>
+<style scoped>
+.package {
+  font-size: 3rem;
+  margin-bottom: 1.4rem;
+}
+</style>
