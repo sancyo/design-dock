@@ -4,7 +4,7 @@
       class="post-link"
       :to="{
         name: 'title',
-        params: { title: title, path: path }
+        params: { title: path, path: path }
       }"
     >
       <div class="post-img">
