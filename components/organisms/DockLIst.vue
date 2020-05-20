@@ -2,9 +2,7 @@
   <div class="inner">
     <ul class="dock-list">
       <li v-for="item in items" :key="item.id">
-        <nuxt-link :to="item.tag">
-          <dock-item :name="item.name" :icon="item.tag" />
-        </nuxt-link>
+        <dock-item :name="item.name" :icon="item.tag" />
       </li>
     </ul>
   </div>

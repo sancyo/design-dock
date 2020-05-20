@@ -1,22 +1,22 @@
 {
   "fileMap": {
-    "content/json/example2/index.json": {
-      "path": "example2",
-      "title": "example2",
-      "tag": "Design",
-      "date": "2020/05/15",
-      "dir": "content/json/example2",
-      "base": "index.json",
-      "ext": ".json",
-      "sourceBase": "index.md",
-      "sourceExt": ".md"
-    },
     "content/json/example/index.json": {
       "path": "example",
       "title": "ここにタイトルが入ります",
       "tag": "Vue.js",
       "date": "2020/05/15",
       "dir": "content/json/example",
+      "base": "index.json",
+      "ext": ".json",
+      "sourceBase": "index.md",
+      "sourceExt": ".md"
+    },
+    "content/json/example2/index.json": {
+      "path": "example2",
+      "title": "example2",
+      "tag": "Design",
+      "date": "2020/05/15",
+      "dir": "content/json/example2",
       "base": "index.json",
       "ext": ".json",
       "sourceBase": "index.md",
