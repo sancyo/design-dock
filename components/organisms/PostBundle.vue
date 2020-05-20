@@ -2,7 +2,7 @@
   <div class="inner">
     <div class="post-bundle">
       <post-item
-        v-for="item in blogItems"
+        v-for="item in postMeta"
         :key="item.id"
         :title="item.title"
         :path="item.path"
@@ -20,8 +20,9 @@ export default {
     PostItem
   },
   computed: {
-    blogItems() {
-      return this.$store.getters.getItemList.fileMap
+    // 記事のメタ情報を取得
+    postMeta() {
+      return this.$store.getters.getPostMeta()
     }
   }
 }
@@ -30,6 +31,7 @@ export default {
 <style scoped>
 .post-bundle {
   display: flex;
+  flex-wrap: wrap;
   width: 100%;
   justify-content: space-between;
 }
