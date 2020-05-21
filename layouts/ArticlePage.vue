@@ -10,8 +10,17 @@ import ThePageHeader from '@/layouts/ThePageHeader'
 export default {
   components: {
     ThePageHeader
+  },
+  head: {
+    htmlAttrs: {
+      class: 'article-page'
+    }
   }
 }
 </script>
 
-<style></style>
+<style>
+.article-page {
+  background-color: #fff;
+}
+</style>

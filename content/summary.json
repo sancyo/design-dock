@@ -12,18 +12,6 @@
       "sourceBase": "index.md",
       "sourceExt": ".md"
     },
-    "content/json/example2/index.json": {
-      "path": "example2",
-      "title": "example2",
-      "tag": "Design",
-      "date": "2020/05/16",
-      "sort": "design",
-      "dir": "content/json/example2",
-      "base": "index.json",
-      "ext": ".json",
-      "sourceBase": "index.md",
-      "sourceExt": ".md"
-    },
     "content/json/example3/index.json": {
       "path": "example3",
       "title": "example3",
@@ -31,6 +19,18 @@
       "date": "2020/05/13",
       "sort": "others",
       "dir": "content/json/example3",
+      "base": "index.json",
+      "ext": ".json",
+      "sourceBase": "index.md",
+      "sourceExt": ".md"
+    },
+    "content/json/example2/index.json": {
+      "path": "example2",
+      "title": "example2",
+      "tag": "Design",
+      "date": "2020/05/16",
+      "sort": "design",
+      "dir": "content/json/example2",
       "base": "index.json",
       "ext": ".json",
       "sourceBase": "index.md",

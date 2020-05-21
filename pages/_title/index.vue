@@ -1,9 +1,9 @@
 <template>
-  <div class="container">
+  <main class="container">
     <div class="inner content-inner">
-      <div v-html="sourcePath.bodyHtml"></div>
+      <div class="" v-html="sourcePath.bodyHtml"></div>
     </div>
-  </div>
+  </main>
 </template>
 
 <script>
@@ -28,7 +28,11 @@ export default {
 </script>
 
 <style scoped>
+html {
+  background: #fff;
+}
 .inner {
   background: #fff;
+  margin: 3.2rem auto;
 }
 </style>
