@@ -1,20 +1,28 @@
 <template>
   <div class="dock-item">
-    <div class="wrap">
-      <img
-        :src="require(`@/static/dock-icon/icon-${icon}.png`)"
-        alt=" "
-        class="dock-icon"
-      />
-      <p class="dock-name">{{ name }}</p>
-    </div>
+    <nuxt-link
+      class="dock-link"
+      :to="{
+        name: 'dock',
+        params: { dock: tag }
+      }"
+    >
+      <div class="wrap">
+        <img
+          :src="require(`@/static/dock-icon/icon-${tag}.png`)"
+          alt=" "
+          class="dock-icon"
+        />
+        <p class="dock-name">{{ name }}</p>
+      </div>
+    </nuxt-link>
   </div>
 </template>
 
 <script>
 export default {
   props: {
-    icon: {
+    tag: {
       type: String,
       default: ''
     },
@@ -37,6 +45,12 @@ export default {
   text-align: center;
   position: relative;
   margin-right: 1.6rem;
+}
+
+.dock-link {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
 }
 
 .wrap {

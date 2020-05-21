@@ -53,4 +53,9 @@ a:active {
   max-width: 1024px;
   margin: 0 auto;
 }
+
+.package {
+  font-size: 3rem;
+  margin-bottom: 1.4rem;
+}
 </style>

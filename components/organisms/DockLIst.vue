@@ -2,7 +2,7 @@
   <div class="inner">
     <ul class="dock-list">
       <li v-for="item in items" :key="item.id">
-        <dock-item :name="item.name" :icon="item.tag" />
+        <dock-item :name="item.name" :tag="item.tag" />
       </li>
     </ul>
   </div>
