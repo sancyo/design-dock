@@ -22,7 +22,7 @@ html {
   font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
     Roboto, 'Helvetica Neue', Arial, sans-serif;
   font-size: 62.5%;
-  background-color: #dce1eb;
+  background-color: #f7f7f9;
 }
 
 h1,
@@ -52,10 +52,11 @@ a:active {
 .inner {
   max-width: 1024px;
   margin: 0 auto;
+  padding: 0 0.8rem;
 }
 
 .package {
-  font-size: 3rem;
+  font-size: 2.4rem;
   margin-bottom: 1.4rem;
 }
 </style>

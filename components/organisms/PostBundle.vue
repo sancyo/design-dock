@@ -1,15 +1,13 @@
 <template>
-  <div class="inner">
-    <div class="post-bundle">
-      <post-item
-        v-for="item in postMeta"
-        :key="item.id"
-        :title="item.title"
-        :path="item.path"
-        :tag="item.tag"
-        :date="item.date"
-      />
-    </div>
+  <div class="post-bundle">
+    <post-item
+      v-for="item in postMeta"
+      :key="item.id"
+      :title="item.title"
+      :path="item.path"
+      :tag="item.tag"
+      :date="item.date"
+    />
   </div>
 </template>
 

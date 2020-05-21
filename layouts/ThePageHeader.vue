@@ -22,7 +22,7 @@ export default {}
   background-color: #fff;
 }
 .logo {
-  padding: 0.8em 0 0.8rem 0.8rem;
-  width: 170px;
+  padding: 1.6rem 0 1.4rem 0;
+  width: 140px;
 }
 </style>
