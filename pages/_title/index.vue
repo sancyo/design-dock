@@ -22,7 +22,8 @@ export default {
     return store.getters.getSourceFileArray.includes(
       `content/blog/${params.path}/index.md`
     )
-  }
+  },
+  layout: 'ArticlePage'
 }
 </script>
 
