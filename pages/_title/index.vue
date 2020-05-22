@@ -1,7 +1,12 @@
 <template>
   <main class="container">
     <div class="inner content-inner">
-      <div class="" v-html="sourcePath.bodyHtml"></div>
+      <div class="post-head">
+        <span class="post-tag">{{ sourcePath.tag }}</span>
+        <h2 class="post-title">{{ sourcePath.title }}</h2>
+        <time class="post-day">{{ sourcePath.date }}</time>
+      </div>
+      <div class="post-content" v-html="sourcePath.bodyHtml"></div>
     </div>
   </main>
 </template>
@@ -33,6 +38,10 @@ html {
 }
 .inner {
   background: #fff;
+  max-width: 800px;
   margin: 3.2rem auto;
+}
+.post-head {
+  text-align: center;
 }
 </style>

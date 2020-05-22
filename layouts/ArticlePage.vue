@@ -21,6 +21,6 @@ export default {
 
 <style>
 .article-page {
-  background-color: #fff;
+  background-color: #f7f7f9;
 }
 </style>

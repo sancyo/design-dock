@@ -18,16 +18,10 @@ export default {
     PostItem
   },
   props: {
-    // ソート用のデータ
-    sortTag: {
-      type: String,
-      default: ''
-    }
-  },
-  computed: {
-    // 記事のメタ情報を取得
-    postMeta() {
-      return this.$store.getters.getPostMeta(this.sortTag)
+    // 記事のメタ情報
+    postMeta: {
+      type: Object,
+      default: () => {}
     }
   }
 }

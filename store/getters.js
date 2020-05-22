@@ -37,5 +37,8 @@ export default {
   },
   getSourceFileArray(state) {
     return state.sourceFileArray
+  },
+  getDockList(state) {
+    return state.dockList
   }
 }

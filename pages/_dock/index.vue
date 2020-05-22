@@ -1,16 +1,14 @@
 <template>
   <div class="container">
-    <div class="inner content-inner">
-      <post-bundle :sort-tag="this.$route.params.dock" />
-    </div>
+    <sort-page />
   </div>
 </template>
 
 <script>
-import PostBundle from '@/components/organisms/PostBundle'
+import SortPage from '@/components/template/SortPage'
 export default {
   components: {
-    PostBundle
+    SortPage
   }
 }
 </script>

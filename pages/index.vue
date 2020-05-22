@@ -1,16 +1,14 @@
 <template>
   <div class="container">
-    <div class="inner content-inner">
-      <post-bundle :sort-tag="null" />
-    </div>
+    <top-page />
   </div>
 </template>
 
 <script>
-import PostBundle from '@/components/organisms/PostBundle'
+import TopPage from '@/components/template/TopPage'
 export default {
   components: {
-    PostBundle
+    TopPage
   }
 }
 </script>
