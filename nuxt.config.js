@@ -49,5 +49,8 @@ export default {
      ** You can extend webpack config here
      */
     extend(config, ctx) {}
+  },
+  generate: {
+    routes: ['/vue', '/design', '/webpack', '/git-hub', '/others', '/example']
   }
 }

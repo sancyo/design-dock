@@ -1,20 +1,13 @@
 <template>
-  <div class="post-page">
-    <div class="inner post-page-inner">
-      <dock-list :dock-list="getDockList" />
-      <post-bundle :post-meta="getPostMeta" />
-    </div>
-  </div>
+  <dock-list :dock-list="getDockList" />
 </template>
 
 <script>
 import DockList from '@/components/organisms/DockList'
-import PostBundle from '@/components/organisms/PostBundle'
 
 export default {
   components: {
-    DockList,
-    PostBundle
+    DockList
   },
   computed: {
     // 記事のメタ情報を取得
@@ -28,8 +21,4 @@ export default {
 }
 </script>
 
-<style scoped>
-.post-page-inner {
-  margin: 3.2rem auto;
-}
-</style>
+<style scoped></style>
