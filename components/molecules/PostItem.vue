@@ -45,11 +45,11 @@ export default {
   background-color: #fff;
   width: 33.2rem;
   border-radius: 8px;
-  padding: 1.4rem;
   box-sizing: border-box;
 }
 .post-link {
   display: flex;
+  padding: 1.4rem;
 }
 .post-title {
   font-size: 1.4rem;
