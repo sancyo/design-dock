@@ -1,17 +1,12 @@
 <template>
-  <span class="post-tag">{{ tagName }}</span>
+  <span class="post-tag">{{ name }}</span>
 </template>
 
 <script>
 export default {
   props: {
-    // タグの色
-    tagColor: {
-      type: String,
-      default: ''
-    },
     // 表示するタグの名前
-    tagName: {
+    name: {
       type: String,
       default: ''
     }
@@ -22,4 +17,15 @@ export default {
 }
 </script>
 
-<style scoped></style>
+<style scoped>
+.post-tag {
+  display: inline-block;
+  padding: 0.4rem 2rem;
+  font-size: 1.2rem;
+  background: #323232;
+  color: #fff;
+  text-decoration: none;
+  user-select: none;
+  border-radius: 5px;
+}
+</style>
