@@ -1,5 +1,5 @@
 <template>
-  <dock-list :dock-list="getDockList" />
+  <dock-list :dock-list="getDockList()" />
 </template>
 
 <script>
@@ -8,8 +8,10 @@ export default {
   components: {
     DockList
   },
-  getDockList() {
-    return this.$store.getters.getDockList
+  methods: {
+    getDockList() {
+      return this.$store.getters.getDockList
+    }
   }
 }
 </script>

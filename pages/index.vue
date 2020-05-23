@@ -1,15 +1,10 @@
 <template>
-  <div class="container">
-    <top-page />
-  </div>
+  <div class="container"></div>
 </template>
 
 <script>
-import TopPage from '@/components/template/TopPage'
 export default {
-  components: {
-    TopPage
-  }
+  components: {}
 }
 </script>
 
