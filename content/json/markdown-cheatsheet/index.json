@@ -1,0 +1,14 @@
+{
+  "path": "markdown-cheatsheet",
+  "title": "マークダウンのデザイン集",
+  "tag": "Design",
+  "date": "2020/05/23",
+  "sort": "design",
+  "bodyContent": "## Heading2\r\n### Heading3\r\n#### Heading4\r\n##### Heading5\r\n\r\n- Sample text\r\n- Sample text\r\n- Sample text\r\n  - Sample text\r\n  - Sample text\r\n\r\n```css\r\n  body {\r\n    color: red;\r\n  }\r\n```\r\n\r\nこちらは[Twitterのリンク](https://twitter.com/)",
+  "bodyHtml": "<h2>Heading2</h2>\n<h3>Heading3</h3>\n<h4>Heading4</h4>\n<h5>Heading5</h5>\n<ul>\n<li>Sample text</li>\n<li>Sample text</li>\n<li>Sample text\n<ul>\n<li>Sample text</li>\n<li>Sample text</li>\n</ul>\n</li>\n</ul>\n<pre><code class=\"hljs\"><span class=\"hljs-selector-tag\">body</span> {\n    <span class=\"hljs-attribute\">color</span>: red;\n  }</code></pre><p>こちらは<a href=\"https://twitter.com/\">Twitterのリンク</a></p>\n",
+  "dir": "content/json/markdown-cheatsheet",
+  "base": "index.json",
+  "ext": ".json",
+  "sourceBase": "index.md",
+  "sourceExt": ".md"
+}

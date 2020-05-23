@@ -20,12 +20,11 @@ export default {
 <style scoped>
 .post-tag {
   display: inline-block;
-  padding: 0.4rem 2rem;
-  font-size: 1.2rem;
-  background: #323232;
+  background-color: #323232;
   color: #fff;
-  text-decoration: none;
-  user-select: none;
-  border-radius: 5px;
+  font-weight: bold;
+  padding: 0.3rem 3.2rem 0.5rem;
+  border-radius: 12px;
+  font-size: 1.3rem;
 }
 </style>

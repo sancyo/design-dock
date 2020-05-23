@@ -1,12 +1,12 @@
 {
   "fileMap": {
-    "content/json/example2/index.json": {
-      "path": "example2",
-      "title": "example2",
+    "content/json/markdown-cheatsheet/index.json": {
+      "path": "markdown-cheatsheet",
+      "title": "マークダウンのデザイン集",
       "tag": "Design",
-      "date": "2020/05/16",
+      "date": "2020/05/23",
       "sort": "design",
-      "dir": "content/json/example2",
+      "dir": "content/json/markdown-cheatsheet",
       "base": "index.json",
       "ext": ".json",
       "sourceBase": "index.md",
@@ -35,11 +35,24 @@
       "ext": ".json",
       "sourceBase": "index.md",
       "sourceExt": ".md"
+    },
+    "content/json/example2/index.json": {
+      "path": "example2",
+      "title": "example2",
+      "tag": "Design",
+      "date": "2020/05/16",
+      "sort": "design",
+      "dir": "content/json/example2",
+      "base": "index.json",
+      "ext": ".json",
+      "sourceBase": "index.md",
+      "sourceExt": ".md"
     }
   },
   "sourceFileArray": [
     "content/blog/example/index.md",
     "content/blog/example2/index.md",
-    "content/blog/example3/index.md"
+    "content/blog/example3/index.md",
+    "content/blog/markdown-cheatsheet/index.md"
   ]
 }

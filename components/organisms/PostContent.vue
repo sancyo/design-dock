@@ -30,7 +30,7 @@ export default {
 <style scoped>
 .post-content {
   background: #fff;
-  padding: 4.8rem;
+  padding: 6.4rem;
   margin: 5.6rem auto;
   max-width: 800px;
   box-sizing: border-box;
@@ -39,17 +39,29 @@ export default {
 
 .post-head {
   text-align: center;
-  padding: 0 0 5.6rem 0;
+  padding: 0 0 6.4rem 0;
+  position: relative;
+}
+.post-head::after {
+  background: #b2babd;
+  position: absolute;
+  width: 80%;
+  height: 0.8px;
+  bottom: 0;
+  left: 50%;
+  content: '';
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
 }
 
 .post-title {
   margin-top: 2.4rem;
-  font-size: 3.2rem;
+  font-size: 2.8rem;
 }
 
 .post-date {
   display: inline-block;
-  font-size: 1rem;
+  font-size: 1.1rem;
   color: #9a9a9a;
   margin-top: 2.8rem;
 }
