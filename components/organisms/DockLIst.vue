@@ -14,7 +14,7 @@ export default {
   },
   props: {
     dockList: {
-      type: Object,
+      type: Array,
       default: () => {}
     }
   }

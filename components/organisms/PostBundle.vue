@@ -20,7 +20,7 @@ export default {
   props: {
     // 記事のメタ情報
     postMeta: {
-      type: Object,
+      type: Array,
       default: () => {}
     }
   }
