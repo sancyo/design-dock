@@ -1,15 +1,20 @@
 <template>
   <div>
     <the-page-header />
+    <main class="inner">
+      <post-content-setter />
+    </main>
     <nuxt />
   </div>
 </template>
 
 <script>
 import ThePageHeader from '@/layouts/ThePageHeader'
+import PostContentSetter from '@/components/template/PostContentSetter'
 export default {
   components: {
-    ThePageHeader
+    ThePageHeader,
+    PostContentSetter
   },
   head: {
     htmlAttrs: {
