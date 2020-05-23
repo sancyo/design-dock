@@ -1,19 +1,16 @@
 <template>
   <div class="post-page">
     <div class="inner post-page-inner">
-      <dock-list :dock-list="getDockList" />
       <post-bundle :post-meta="getPostMeta" />
     </div>
   </div>
 </template>
 
 <script>
-import DockList from '@/components/organisms/DockList'
 import PostBundle from '@/components/organisms/PostBundle'
 
 export default {
   components: {
-    DockList,
     PostBundle
   },
   computed: {
