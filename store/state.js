@@ -2,7 +2,7 @@ import fileArray from '../content/summary.json'
 
 // 記事のメタ情報を配列に格納 投稿日で並び替え
 const metaList = Object.values(fileArray.fileMap).sort((a, b) => {
-  return new Date(a.date) + new Date(b.date)
+  return new Date(a.datex) + new Date(b.date)
 })
 
 // 上部メニュー一覧
@@ -17,5 +17,6 @@ const DOCK_LIST = [
 export default () => ({
   itemSorce: metaList,
   dockList: DOCK_LIST,
+  displayPage: '',
   sourceFileArray: fileArray.sourceFileArray
 })

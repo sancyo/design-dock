@@ -3,8 +3,8 @@
     <nuxt-link
       class="post-link"
       :to="{
-        name: 'title',
-        params: { title: path, path: path }
+        name: 'dock-post',
+        params: { post: path }
       }"
     >
       <div class="post-meta">
@@ -41,10 +41,8 @@ export default {
 
 <style scoped>
 .post-item {
-  margin-bottom: 0.8rem;
   background-color: #fff;
-  width: 33.2rem;
-  border-radius: 8px;
+  width: 100%;
   box-sizing: border-box;
 }
 .post-link {

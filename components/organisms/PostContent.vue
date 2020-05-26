@@ -29,12 +29,10 @@ export default {
 
 <style scoped>
 .post-content {
-  background: #fff;
   padding: 6.4rem;
   margin: 5.6rem auto;
   max-width: 800px;
   box-sizing: border-box;
-  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 2px 0 rgba(0, 0, 0, 0.12);
 }
 
 .post-head {

@@ -12,7 +12,7 @@ export default {
   },
   data() {
     return {
-      sourcePath: require(`../../content/json/${this.$route.params.path}/index.json`)
+      sourcePath: require(`../../content/json/${this.$route.params.post}/index.json`)
     }
   }
 }

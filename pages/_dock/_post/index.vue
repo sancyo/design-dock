@@ -8,6 +8,8 @@
       </div>
       <div class="right">
         <h3 class="label">Content</h3>
+        <post-content-setter />
+        {{ this.$route.params }}
       </div>
     </div>
   </div>
@@ -16,10 +18,18 @@
 <script>
 import DockListSetter from '@/components/template/DockListSetter'
 import PostBundleSetter from '@/components/template/PostBundleSetter'
+import PostContentSetter from '@/components/template/PostContentSetter'
 export default {
+  validate({ params, store }) {
+    // 指定されたmdファイルがあるか確認
+    return store.getters.getSourceFileArray.includes(
+      `content/blog/${params.post}/index.md`
+    )
+  },
   components: {
     DockListSetter,
-    PostBundleSetter
+    PostBundleSetter,
+    PostContentSetter
   }
 }
 </script>

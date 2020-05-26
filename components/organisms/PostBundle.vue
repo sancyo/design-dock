@@ -29,7 +29,7 @@ export default {
 
 <style scoped>
 .post-bundle {
-  display: flex;
+  display: block;
   flex-wrap: wrap;
   width: 100%;
   justify-content: space-between;

@@ -12,7 +12,7 @@ export default {
     PostBundle
   },
   methods: {
-    // 記事のメタ情報を取得
+    // 記事のメタ情報が格納された配列を取得
     getPostMeta() {
       if (typeof this.$route.params.dock === 'string') {
         return this.$store.getters.getPostMeta(this.$route.params.dock)

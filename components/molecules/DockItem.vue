@@ -13,7 +13,6 @@
           alt=" "
           class="dock-icon"
         />
-        <p class="dock-name">{{ name }}</p>
       </div>
     </nuxt-link>
   </div>
@@ -29,6 +28,10 @@ export default {
     name: {
       type: String,
       default: ''
+    },
+    path: {
+      type: String,
+      default: ''
     }
   }
 }
@@ -37,14 +40,20 @@ export default {
 <style scoped>
 .dock-item {
   display: inline-block;
-  width: 10rem;
-  height: 10rem;
+  width: 5rem;
+  height: 5rem;
   background-color: #fff;
   border-radius: 10px;
   box-sizing: border-box;
   text-align: center;
   position: relative;
-  margin-right: 1.6rem;
+  margin-right: 1rem;
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.08), 0 2px 2px 0 rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
+
+.dock-item:hover {
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.22), 0 2px 2px 0 rgba(0, 0, 0, 0.14);
 }
 
 .dock-link {
@@ -62,7 +71,7 @@ export default {
 }
 
 .dock-icon {
-  width: 4rem;
+  width: 3rem;
 }
 .dock-name {
   font-size: 1.4rem;
