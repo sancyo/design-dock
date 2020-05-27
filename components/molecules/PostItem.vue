@@ -1,18 +1,13 @@
 <template>
   <article class="post-item">
-    <nuxt-link
-      class="post-link"
-      :to="{
-        name: 'dock-post',
-        params: { post: path }
-      }"
-    >
+    <nuxt-link class="post-link" :to="`${sort}/${path}`">
       <div class="post-meta">
         <span class="post-tag">{{ tag }}</span>
         <h3 class="post-title">{{ title }}</h3>
         <time class="post-date">{{ date }}</time>
       </div>
     </nuxt-link>
+    {{ this.sort }}
   </article>
 </template>
 
@@ -32,6 +27,10 @@ export default {
       default: ''
     },
     date: {
+      type: String,
+      default: ''
+    },
+    sort: {
       type: String,
       default: ''
     }

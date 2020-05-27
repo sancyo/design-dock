@@ -7,6 +7,7 @@
       :path="item.path"
       :tag="item.tag"
       :date="item.date"
+      :sort="item.sort"
     />
   </div>
 </template>

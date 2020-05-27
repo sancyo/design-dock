@@ -9,7 +9,6 @@
       </div>
       <div class="right">
         <h3 class="label">Content</h3>
-        {{ this.$route.params }}
       </div>
     </div>
     <nuxt />

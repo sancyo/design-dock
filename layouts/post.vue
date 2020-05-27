@@ -10,7 +10,6 @@
       <div class="right">
         <h3 class="label">Content</h3>
         <post-content-setter />
-        {{ this.$route.params }}
       </div>
     </div>
     <nuxt />
