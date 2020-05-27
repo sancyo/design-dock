@@ -1,36 +1,17 @@
 <template>
-  <div class="container">
-    <div class="inner">
-      <div class="dock">
-        <h3 class="label">Package</h3>
-        <dock-list-setter />
-        <post-bundle-setter />
-      </div>
-      <div class="right">
-        <h3 class="label">Content</h3>
-        <post-content-setter />
-        {{ this.$route.params }}
-      </div>
-    </div>
-  </div>
+  <div class="container"></div>
 </template>
 
 <script>
-import DockListSetter from '@/components/template/DockListSetter'
-import PostBundleSetter from '@/components/template/PostBundleSetter'
-import PostContentSetter from '@/components/template/PostContentSetter'
 export default {
+  layout: 'post',
   validate({ params, store }) {
     // 指定されたmdファイルがあるか確認
     return store.getters.getSourceFileArray.includes(
       `content/blog/${params.post}/index.md`
     )
   },
-  components: {
-    DockListSetter,
-    PostBundleSetter,
-    PostContentSetter
-  }
+  components: {}
 }
 </script>
 

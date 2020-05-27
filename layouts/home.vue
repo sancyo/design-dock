@@ -9,7 +9,6 @@
       </div>
       <div class="right">
         <h3 class="label">Content</h3>
-        <post-content-setter />
         {{ this.$route.params }}
       </div>
     </div>
@@ -21,13 +20,11 @@
 import ThePageHeader from '@/layouts/ThePageHeader'
 import DockListSetter from '@/components/template/DockListSetter'
 import PostBundleSetter from '@/components/template/PostBundleSetter'
-import PostContentSetter from '@/components/template/PostContentSetter'
 export default {
   components: {
     ThePageHeader,
     DockListSetter,
-    PostBundleSetter,
-    PostContentSetter
+    PostBundleSetter
   }
 }
 </script>
