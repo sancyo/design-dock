@@ -7,7 +7,6 @@
         <time class="post-date">{{ date }}</time>
       </div>
     </nuxt-link>
-    {{ this.sort }}
   </article>
 </template>
 
