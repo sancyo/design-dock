@@ -1,21 +1,24 @@
 <template>
-  <ul class="dock-list">
-    <li v-for="item in dockList" :key="item.id">
-      <dock-item :name="item.name" :tag="item.tag" />
-    </li>
-  </ul>
+  <div class="inner">
+    <ul class="dock-list">
+      <li v-for="item in items" :key="item.id">
+        <dock-item :name="item.name" :icon="item.icon" />
+      </li>
+    </ul>
+  </div>
 </template>
 
 <script>
 import DockItem from '@/components/molecules/DockItem'
+import { DOCK_LIST } from '@/config/constant.js'
 export default {
   components: {
     DockItem
   },
-  props: {
-    dockList: {
-      type: Array,
-      default: () => {}
+  data() {
+    return {
+      // ナビゲーションのメタ情報
+      items: DOCK_LIST
     }
   }
 }
@@ -24,8 +27,6 @@ export default {
 <style scoped>
 .dock-list {
   display: flex;
-  width: 100%;
-  padding: 0 1.4rem 1.4rem 0;
-  box-sizing: border-box;
+  margin: 3.2rem 0.8rem;
 }
 </style>

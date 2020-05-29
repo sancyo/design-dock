@@ -1,12 +1,15 @@
 <template>
-  <div class="post-bundle">
-    <post-item
-      v-for="item in filePathArray"
-      :key="item.id"
-      :title="item.title"
-      :date="item.date"
-      :url="item.url"
-    />
+  <div class="inner">
+    <div class="post-bundle">
+      <post-item
+        v-for="item in blogItems"
+        :key="item.id"
+        :title="item.title"
+        :path="item.path"
+        :tag="item.tag"
+        :date="item.date"
+      />
+    </div>
   </div>
 </template>
 
@@ -16,11 +19,9 @@ export default {
   components: {
     PostItem
   },
-  props: {
-    // 記事のメタ情報
-    filePathArray: {
-      type: Array,
-      default: () => {}
+  computed: {
+    blogItems() {
+      return this.$store.getters.getItemList.fileMap
     }
   }
 }
@@ -28,8 +29,7 @@ export default {
 
 <style scoped>
 .post-bundle {
-  display: block;
-  flex-wrap: wrap;
+  display: flex;
   width: 100%;
   justify-content: space-between;
 }

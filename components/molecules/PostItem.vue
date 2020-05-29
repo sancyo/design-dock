@@ -3,13 +3,17 @@
     <nuxt-link
       class="post-link"
       :to="{
-        name: 'package-content',
-        params: { content: url, package: this.$route.params.package }
+        name: 'title',
+        params: { title: path, path: path }
       }"
     >
+      <div class="post-img">
+        <img src="" alt="" />
+      </div>
       <div class="post-meta">
         <h3 class="post-title">{{ title }}</h3>
         <time class="post-date">{{ date }}</time>
+        <span class="post-tag">{{ tag }}</span>
       </div>
     </nuxt-link>
   </article>
@@ -22,11 +26,15 @@ export default {
       type: String,
       default: ''
     },
-    date: {
+    path: {
       type: String,
       default: ''
     },
-    url: {
+    tag: {
+      type: String,
+      default: ''
+    },
+    date: {
       type: String,
       default: ''
     }
@@ -36,31 +44,41 @@ export default {
 
 <style scoped>
 .post-item {
+  margin-bottom: 0.8rem;
   background-color: #fff;
-  width: 100%;
+  width: 48%;
+  border-radius: 10px;
+  padding: 1.6rem;
   box-sizing: border-box;
 }
 .post-link {
   display: flex;
-  padding: 1.4rem;
+}
+.post-img {
+  width: 120px;
+  height: 80px;
+  background-color: #323232;
+  border-radius: 5px;
+}
+.post-meta {
+  margin-left: 1.2rem;
 }
 .post-title {
-  font-size: 1.4rem;
-  margin-top: 0.8rem;
+  font-size: 2rem;
 }
 .post-date {
   display: block;
   color: #8b8b8c;
-  font-size: 1rem;
-  margin-top: 0.6rem;
+  padding: 0.6rem 0;
+  font-size: 1.2rem;
 }
 .post-tag {
   display: inline-block;
   background-color: #323232;
   color: #fff;
   font-weight: bold;
-  padding: 0.3rem 2rem;
-  border-radius: 12px;
+  padding: 0.4rem 1rem;
+  border-radius: 7px;
   font-size: 1rem;
 }
 </style>

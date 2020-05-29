@@ -1,7 +1,7 @@
 export const DOCK_LIST = [
-  { name: 'Vue.js', tag: 'vue' },
-  { name: 'Webpack', tag: 'webpack' },
-  { name: 'Design', tag: 'design' },
-  { name: 'GitHub', tag: 'git-hub' },
-  { name: 'Others', tag: 'others' }
+  { name: 'Vue.js', icon: 'vue' },
+  { name: 'Webpack', icon: 'webpack' },
+  { name: 'Design', icon: 'design' },
+  { name: 'GitHub', icon: 'git-hub' },
+  { name: 'Others', icon: 'others' }
 ]
