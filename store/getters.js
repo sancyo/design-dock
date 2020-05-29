@@ -3,33 +3,16 @@ export default {
     return state.itemSorce
   },
   getPostMeta: (state) => (...sortTag) => {
-    /*
-    switch (sortTag.length) {
-      // 引数が指定されない時
-      case 0: {
-        return state.itemSorce
-      }
-      // 引数が1つ指定された時
-      case 1: {
-        console.log(sortTag)
-        const sortedArray = state.itemSorce.filter(
-          // 引数とsortプロパティを比較して一致したオブジェクトだけ返す
-          (array) => array.sort === String(sortTag[0])
-        )
-        return sortedArray
-      }
-    }
-    */
     switch (typeof sortTag[0]) {
       // 引数がnullの時
       case 'object': {
-        return state.itemSorce
+        return state.packageArray
       }
       // 引数が文字列の時
       case 'string': {
-        const sortedArray = state.itemSorce.filter(
+        const sortedArray = state.packageArray.filter(
           // 引数とsortプロパティを比較して一致したオブジェクトだけ返す
-          (array) => array.sort === String(sortTag[0])
+          (array) => array.tag === String(sortTag[0])
         )
         return sortedArray
       }
@@ -40,5 +23,17 @@ export default {
   },
   getDockList(state) {
     return state.dockList
+  },
+
+  getPackageContent: (state) => (packageName) => {
+    // 引数が含まれている配列を返す
+    return state.packageContentArray.filter((array) =>
+      array.dir.includes(packageName)
+    )
+  },
+  getPackageContentSource(state) {
+    return state.packageContentSource
   }
+
+  //     content/json/package2/page3
 }

@@ -4,13 +4,15 @@
 
 <script>
 export default {
-  layout: 'post',
+  layout: 'post'
+  /*
   validate({ params, store }) {
     // 指定されたmdファイルがあるか確認
     return store.getters.getSourceFileArray.includes(
-      `content/blog/${params.path}/index.md`
+      `content/blog/${params.package}/meta.md`
     )
   }
+  */
 }
 </script>
 

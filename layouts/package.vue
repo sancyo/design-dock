@@ -1,31 +1,35 @@
 <template>
-  <div class="container"></div>
+  <div>
+    <the-page-header />
+    <div class="inner">
+      <div class="dock">
+        <h3 class="label">Dock</h3>
+        <post-bundle-setter />
+      </div>
+    </div>
+    <nuxt />
+  </div>
 </template>
 
 <script>
+import ThePageHeader from '@/layouts/ThePageHeader'
+import PostBundleSetter from '@/components/template/PostBundleSetter'
 export default {
-  layout: 'post',
-  validate({ params, store }) {
-    // 指定されたmdファイルがあるか確認
-    return store.getters.getSourceFileArray.includes(
-      `content/blog/${params.post}/index.md`
-    )
-  },
-  components: {}
+  components: {
+    ThePageHeader,
+    PostBundleSetter
+  }
 }
 </script>
 
 <style scoped>
 .inner {
-  display: flex;
   padding: 5.6rem 0;
   justify-content: flex-end;
   position: relative;
 }
 .dock {
   width: 350px;
-  position: fixed;
-  left: calc((100vw - 1024px) / 2);
 }
 .label {
   background: #383838;

@@ -24,9 +24,8 @@ export default {
 <style scoped>
 .dock-list {
   display: flex;
-  background: #fff;
   width: 100%;
-  padding: 2.6rem 1.4rem 1.4rem 1.4rem;
+  padding: 0 1.4rem 1.4rem 0;
   box-sizing: border-box;
 }
 </style>

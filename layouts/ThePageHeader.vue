@@ -2,9 +2,9 @@
   <div class="container header-container">
     <div class="inner header-inner">
       <h1>
-        <nuxt-link to="/" class="site-logo">
+        <a href="/" class="site-logo">
           <img class="logo" src="@/static/site-logo@2x.png" alt="DesignDock" />
-        </nuxt-link>
+        </a>
       </h1>
     </div>
   </div>

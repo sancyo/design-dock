@@ -4,7 +4,6 @@
     <div class="inner">
       <div class="dock">
         <h3 class="label">Package</h3>
-        <dock-list-setter />
         <post-bundle-setter />
       </div>
       <div class="right">
@@ -18,13 +17,11 @@
 
 <script>
 import ThePageHeader from '@/layouts/ThePageHeader'
-import DockListSetter from '@/components/template/DockListSetter'
 import PostBundleSetter from '@/components/template/PostBundleSetter'
 import PostContentSetter from '@/components/template/PostContentSetter'
 export default {
   components: {
     ThePageHeader,
-    DockListSetter,
     PostBundleSetter,
     PostContentSetter
   }
@@ -48,6 +45,7 @@ export default {
   padding: 1.2rem 1.6rem;
   color: #fff;
   font-size: 2rem;
+  font-weight: 900;
   border-radius: 5px 5px 0 0;
 }
 .right {

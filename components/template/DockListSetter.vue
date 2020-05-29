@@ -10,7 +10,6 @@ export default {
   },
   methods: {
     getDockList() {
-      console.log(this.$route.params)
       return this.$store.getters.getDockList
     }
   }

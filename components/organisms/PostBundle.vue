@@ -1,13 +1,11 @@
 <template>
   <div class="post-bundle">
     <post-item
-      v-for="item in postMeta"
+      v-for="item in filePathArray"
       :key="item.id"
       :title="item.title"
-      :path="item.path"
-      :tag="item.tag"
       :date="item.date"
-      :sort="item.sort"
+      :url="item.url"
     />
   </div>
 </template>
@@ -20,7 +18,7 @@ export default {
   },
   props: {
     // 記事のメタ情報
-    postMeta: {
+    filePathArray: {
       type: Array,
       default: () => {}
     }

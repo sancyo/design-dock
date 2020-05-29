@@ -29,8 +29,8 @@ export default {
 
 <style scoped>
 .post-content {
-  padding: 6.4rem;
-  margin: 5.6rem auto;
+  padding: 4rem 5.6rem;
+  margin: 4rem auto;
   max-width: 800px;
   box-sizing: border-box;
 }
@@ -39,17 +39,7 @@ export default {
   text-align: center;
   padding: 0 0 6.4rem 0;
   position: relative;
-}
-.post-head::after {
-  background: #b2babd;
-  position: absolute;
-  width: 80%;
-  height: 0.8px;
-  bottom: 0;
-  left: 50%;
-  content: '';
-  -webkit-transform: translateX(-50%);
-  transform: translateX(-50%);
+  border-bottom: 1px solid #b2babd;
 }
 
 .post-title {

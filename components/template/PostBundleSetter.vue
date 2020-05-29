@@ -1,6 +1,6 @@
 <template>
   <div class="">
-    <post-bundle :post-meta="getPostMeta()" />
+    <post-bundle :file-path-array="packageContent()" />
   </div>
 </template>
 
@@ -12,13 +12,12 @@ export default {
     PostBundle
   },
   methods: {
-    // 記事のメタ情報が格納された配列を取得
-    getPostMeta() {
-      if (typeof this.$route.params.dock === 'string') {
-        return this.$store.getters.getPostMeta(this.$route.params.dock)
-      } else {
-        return this.$store.getters.getPostMeta(null)
-      }
+    packageContent() {
+      // パッケージに含まれるコンテンツのファイルパスを格納した配列
+      const meta = this.$store.getters.getPackageContent(
+        this.$route.params.package
+      )
+      return meta
     }
   }
 }
