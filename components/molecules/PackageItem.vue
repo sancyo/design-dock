@@ -1,5 +1,5 @@
 <template>
-  <div class="package-item">
+  <section class="package-item">
     <nuxt-link
       class="package-link"
       :to="{
@@ -7,13 +7,13 @@
         params: { package: path }
       }"
     >
-      {{ tag }}
-      {{ name }}
-      {{ date }}
-      {{ path }}
+      <span class="package-tag">{{ tag }}</span>
+      <h3 class="package-title">{{ name }}</h3>
+      <time class="package-date">{{ date }}</time>
     </nuxt-link>
-  </div>
+  </section>
 </template>
+
 <script>
 export default {
   props: {
@@ -37,4 +37,38 @@ export default {
 }
 </script>
 
-<style scoped></style>
+<style scoped>
+.package-item {
+  display: inline-block;
+  width: 20rem;
+  margin-bottom: 1.6rem;
+}
+
+.package-link:hover {
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2), 0 2px 10px 0 rgba(0, 0, 0, 0.14);
+}
+.package-link {
+  display: inline-block;
+  padding: 1.6rem;
+  background: #fff;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+.package-date {
+  display: block;
+}
+.package-title {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+.package-tag {
+  display: inline-block;
+  background: #323232;
+  padding: 0.1rem 1.6rem;
+  color: #fff;
+  border-radius: 8px;
+  font-weight: bold;
+  margin-bottom: 0.8rem;
+  font-size: 1rem;
+}
+</style>

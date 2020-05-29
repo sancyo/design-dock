@@ -26,4 +26,8 @@ export default {
 }
 </script>
 
-<style></style>
+<style scoped>
+.package-bundle {
+  margin-top: 3.2rem;
+}
+</style>
