@@ -45,7 +45,7 @@ export default {
 }
 
 .package-link:hover {
-  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2), 0 2px 10px 0 rgba(0, 0, 0, 0.14);
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2), 0 2px 15px 0 rgba(0, 0, 0, 0.14);
 }
 .package-link {
   display: inline-block;
@@ -53,6 +53,7 @@ export default {
   background: #fff;
   border-radius: 8px;
   transition: 0.3s;
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.08), 0 2px 2px 0 rgba(0, 0, 0, 0.1);
 }
 .package-date {
   display: block;

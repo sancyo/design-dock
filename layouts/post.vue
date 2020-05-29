@@ -34,6 +34,7 @@ export default {
   padding: 5.6rem 0;
   justify-content: flex-end;
   position: relative;
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.08), 0 2px 2px 0 rgba(0, 0, 0, 0.1);
 }
 .dock {
   width: 350px;
@@ -41,7 +42,7 @@ export default {
   left: calc((100vw - 1024px) / 2);
 }
 .label {
-  background: #383838;
+  background: #323232;
   padding: 1.2rem 1.6rem;
   color: #fff;
   font-size: 2rem;
@@ -52,5 +53,6 @@ export default {
   background: #fff;
   width: 640px;
   min-height: 800px;
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.08), 0 2px 2px 0 rgba(0, 0, 0, 0.1);
 }
 </style>
