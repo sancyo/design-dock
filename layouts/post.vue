@@ -3,7 +3,7 @@
     <the-page-header />
     <div class="inner">
       <div class="dock">
-        <h3 class="label">Package</h3>
+        <h3 class="label">Post</h3>
         <post-bundle-setter />
       </div>
       <div class="right">
@@ -34,19 +34,19 @@ export default {
   padding: 5.6rem 0;
   justify-content: flex-end;
   position: relative;
-  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.08), 0 2px 2px 0 rgba(0, 0, 0, 0.1);
 }
 .dock {
   width: 350px;
   position: fixed;
   left: calc((100vw - 1024px) / 2);
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.08), 0 2px 2px 0 rgba(0, 0, 0, 0.1);
 }
 .label {
   background: #323232;
   padding: 1.2rem 1.6rem;
   color: #fff;
   font-size: 2rem;
-  font-weight: 900;
+  font-weight: bold;
   border-radius: 5px 5px 0 0;
 }
 .right {

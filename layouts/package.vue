@@ -3,7 +3,7 @@
     <the-page-header />
     <div class="inner">
       <div class="dock">
-        <h3 class="label">Dock</h3>
+        <h3 class="label">Post</h3>
         <post-bundle-setter />
       </div>
       <div class="right">

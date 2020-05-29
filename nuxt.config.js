@@ -52,12 +52,19 @@ export default {
   },
   generate: {
     routes: [
-      '/vue/example',
-      '/design/markdown-cheatsheet',
-      '/webpack/example2',
+      '/vue',
+      '/design',
+      '/webpack',
       '/git-hub',
-      '/others/example3',
-      '/example'
+      '/others',
+      '/package1',
+      '/package1/page1',
+      '/package1/page2',
+      '/package1/page3',
+      '/package2',
+      '/package2/page1',
+      '/package2/page2',
+      '/package2/page3'
     ]
   }
 }
