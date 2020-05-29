@@ -1,55 +1,47 @@
 <template>
   <div>
+    <the-page-header />
     <nuxt />
   </div>
 </template>
 
-<style>
-html {
-  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    Roboto, 'Helvetica Neue', Arial, sans-serif;
-  font-size: 16px;
-  word-spacing: 1px;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  box-sizing: border-box;
+<script>
+import ThePageHeader from '@/layouts/ThePageHeader'
+// import DockListSetter from '@/components/template/DockListSetter'
+// import PostBundleSetter from '@/components/template/PostBundleSetter'
+// import PostContentSetter from '@/components/template/PostContentSetter'
+export default {
+  components: {
+    ThePageHeader
+    // DockListSetter,
+    // PostBundleSetter
+    // PostContentSetter
+  }
 }
+</script>
 
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
-  margin: 0;
+<style scoped>
+.inner {
+  display: flex;
+  padding: 5.6rem 0;
+  justify-content: flex-end;
+  position: relative;
 }
-
-.button--green {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #3b8070;
-  color: #3b8070;
-  text-decoration: none;
-  padding: 10px 30px;
+.dock {
+  width: 350px;
+  position: fixed;
+  left: calc((100vw - 1024px) / 2);
 }
-
-.button--green:hover {
+.label {
+  background: #383838;
+  padding: 1.2rem 1.6rem;
   color: #fff;
-  background-color: #3b8070;
+  font-size: 2rem;
+  border-radius: 5px 5px 0 0;
 }
-
-.button--grey {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #35495e;
-  color: #35495e;
-  text-decoration: none;
-  padding: 10px 30px;
-  margin-left: 15px;
-}
-
-.button--grey:hover {
-  color: #fff;
-  background-color: #35495e;
+.right {
+  background: #fff;
+  width: 640px;
+  min-height: 800px;
 }
 </style>

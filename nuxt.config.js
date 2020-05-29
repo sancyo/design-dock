@@ -23,7 +23,7 @@ export default {
   /*
    ** Global CSS
    */
-  css: [],
+  css: ['normalize.css', '@/config/common.css'],
   /*
    ** Plugins to load before mounting the App
    */
@@ -49,5 +49,22 @@ export default {
      ** You can extend webpack config here
      */
     extend(config, ctx) {}
+  },
+  generate: {
+    routes: [
+      '/vue',
+      '/design',
+      '/webpack',
+      '/git-hub',
+      '/others',
+      '/package1',
+      '/package1/page1',
+      '/package1/page2',
+      '/package1/page3',
+      '/package2',
+      '/package2/page1',
+      '/package2/page2',
+      '/package2/page3'
+    ]
   }
 }

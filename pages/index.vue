@@ -4,8 +4,9 @@
 
 <script>
 export default {
+  layout: 'home',
   components: {}
 }
 </script>
 
-<style></style>
+<style scoped></style>
