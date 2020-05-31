@@ -36,7 +36,7 @@ export default {
   position: relative;
 }
 .dock {
-  width: 350px;
+  width: 300px;
   position: fixed;
   left: calc((100vw - 1024px) / 2);
   box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.08), 0 2px 2px 0 rgba(0, 0, 0, 0.1);
@@ -51,7 +51,7 @@ export default {
 }
 .right {
   background: #fff;
-  width: 640px;
+  width: 680px;
   min-height: 800px;
   box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.08), 0 2px 2px 0 rgba(0, 0, 0, 0.1);
 }

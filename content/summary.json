@@ -1,18 +1,28 @@
 {
   "fileMap": {
-    "content/json/package1/page2/index.json": {
-      "title": "package1のpage2です",
-      "date": "2020/05/27",
-      "dir": "content/json/package1/page2",
+    "content/json/about-site/meta.json": {
+      "name": "このサイトについて",
+      "tag": "design",
+      "date": "2020/05/29",
+      "dir": "content/json/about-site",
+      "base": "meta.json",
+      "ext": ".json",
+      "sourceBase": "meta.md",
+      "sourceExt": ".md"
+    },
+    "content/json/about-site/site-design/index.json": {
+      "title": "知識をため込むだけのサイトを作った",
+      "date": "2020/05/29",
+      "dir": "content/json/about-site/site-design",
       "base": "index.json",
       "ext": ".json",
       "sourceBase": "index.md",
       "sourceExt": ".md"
     },
-    "content/json/package1/page3/index.json": {
-      "title": "package1のpage3です",
+    "content/json/package1/page1/index.json": {
+      "title": "package1のpage1です",
       "date": "2020/05/27",
-      "dir": "content/json/package1/page3",
+      "dir": "content/json/package1/page1",
       "base": "index.json",
       "ext": ".json",
       "sourceBase": "index.md",
@@ -28,15 +38,6 @@
       "sourceBase": "meta.md",
       "sourceExt": ".md"
     },
-    "content/json/package1/page1/index.json": {
-      "title": "package1のpage1です",
-      "date": "2020/05/27",
-      "dir": "content/json/package1/page1",
-      "base": "index.json",
-      "ext": ".json",
-      "sourceBase": "index.md",
-      "sourceExt": ".md"
-    },
     "content/json/package2/meta.json": {
       "name": "package2のタイトルが入ります。",
       "tag": "design",
@@ -45,6 +46,24 @@
       "base": "meta.json",
       "ext": ".json",
       "sourceBase": "meta.md",
+      "sourceExt": ".md"
+    },
+    "content/json/package1/page2/index.json": {
+      "title": "package1のpage2です",
+      "date": "2020/05/27",
+      "dir": "content/json/package1/page2",
+      "base": "index.json",
+      "ext": ".json",
+      "sourceBase": "index.md",
+      "sourceExt": ".md"
+    },
+    "content/json/package2/page3/index.json": {
+      "title": "package2のpage3です",
+      "date": "2020/05/27",
+      "dir": "content/json/package2/page3",
+      "base": "index.json",
+      "ext": ".json",
+      "sourceBase": "index.md",
       "sourceExt": ".md"
     },
     "content/json/package2/page1/index.json": {
@@ -65,10 +84,10 @@
       "sourceBase": "index.md",
       "sourceExt": ".md"
     },
-    "content/json/package2/page3/index.json": {
-      "title": "package2のpage3です",
+    "content/json/package1/page3/index.json": {
+      "title": "package1のpage3です",
       "date": "2020/05/27",
-      "dir": "content/json/package2/page3",
+      "dir": "content/json/package1/page3",
       "base": "index.json",
       "ext": ".json",
       "sourceBase": "index.md",
@@ -76,6 +95,8 @@
     }
   },
   "sourceFileArray": [
+    "content/blog/about-site/meta.md",
+    "content/blog/about-site/site-design/index.md",
     "content/blog/package1/meta.md",
     "content/blog/package1/page1/index.md",
     "content/blog/package1/page2/index.md",

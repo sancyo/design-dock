@@ -40,7 +40,6 @@ export default {
 <style scoped>
 .package-item {
   display: inline-block;
-  width: 20rem;
   margin-bottom: 1.6rem;
 }
 
@@ -52,6 +51,7 @@ export default {
   padding: 1.6rem;
   background: #fff;
   border-radius: 8px;
+  width: 20rem;
   transition: 0.3s;
   box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.08), 0 2px 2px 0 rgba(0, 0, 0, 0.1);
 }
