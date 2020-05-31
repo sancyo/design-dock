@@ -1,27 +1,47 @@
 <template>
   <div class="post-content">
     <div class="post-head">
-      <post-tag :name="src.tag" />
       <h2 class="post-title">{{ src.title }}</h2>
       <time class="post-date">{{ src.date }}</time>
     </div>
-    <post-main :html="src.bodyHtml" />
+    <post-main :html="setImageBlock()" />
   </div>
 </template>
 
 <script>
 import PostMain from '@/components/molecules/PostMain'
-import PostTag from '@/components/atoms/PostTag'
 export default {
   components: {
-    PostMain,
-    PostTag
+    PostMain
   },
   props: {
     // 記事のHTML
     src: {
       type: Object,
       default: () => {}
+    }
+  },
+  data() {
+    return {
+      test: ''
+    }
+  },
+  mounted() {
+    this.setImageBlock()
+  },
+  methods: {
+    setImageBlock() {
+      const re = /\$/
+      // htmlを改行コードで分割
+      const html = this.src.bodyHtml.split(re)
+      console.log(html)
+      const map = html.map((x) => {
+        x = x.replace('[small-image]', '\n<div class="small-image">')
+        x = x.replace('[/]', '</div>\n')
+        return x
+      })
+      console.log(map.join(''))
+      return map.join('')
     }
   }
 }

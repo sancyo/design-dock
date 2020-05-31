@@ -42,7 +42,7 @@ export default {
   left: 0;
   width: 6px;
   height: 80%;
-  background: #0786f8;
+  background: #323232;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   border-radius: 3px;
@@ -91,5 +91,27 @@ export default {
 .post-main >>> hr {
   border-color: #fafafa;
   margin: 4rem 0;
+}
+
+.post-main >>> strong {
+  display: block;
+  margin-bottom: 0.8rem;
+}
+
+.post-main >>> img {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 2rem 6.4rem;
+  border-radius: 10px;
+}
+.post-main >>> .small-image {
+  background: #f7f7f9;
+  text-align: center;
+  border-radius: 10px;
+  padding: 1.6rem 0;
+  margin-bottom: 0.8rem;
+}
+.post-main >>> .small-image > img {
+  width: 70%;
 }
 </style>

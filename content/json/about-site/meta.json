@@ -1,0 +1,12 @@
+{
+  "name": "このサイトについて",
+  "tag": "design",
+  "date": "2020/05/29",
+  "bodyContent": "",
+  "bodyHtml": "",
+  "dir": "content/json/about-site",
+  "base": "meta.json",
+  "ext": ".json",
+  "sourceBase": "meta.md",
+  "sourceExt": ".md"
+}
