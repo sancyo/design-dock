@@ -1,0 +1,12 @@
+{
+  "name": "package2のタイトルが入ります。",
+  "tag": "design",
+  "date": "2020/05/27",
+  "bodyContent": "",
+  "bodyHtml": "",
+  "dir": "content/json/package2",
+  "base": "meta.json",
+  "ext": ".json",
+  "sourceBase": "meta.md",
+  "sourceExt": ".md"
+}

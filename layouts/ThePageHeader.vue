@@ -2,9 +2,9 @@
   <div class="container header-container">
     <div class="inner header-inner">
       <h1>
-        <nuxt-link to="/" class="site-logo">
+        <a href="/" class="site-logo">
           <img class="logo" src="@/static/site-logo@2x.png" alt="DesignDock" />
-        </nuxt-link>
+        </a>
       </h1>
     </div>
   </div>
@@ -17,12 +17,13 @@ export default {}
 <style scoped>
 .header-container {
   background-color: #fff;
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.08), 0 2px 2px 0 rgba(0, 0, 0, 0.1);
 }
 .header-inner {
   background-color: #fff;
 }
 .logo {
-  padding: 0.8em 0 0.8rem 0.8rem;
-  width: 170px;
+  padding: 1.6rem 0 1.4rem 0;
+  width: 140px;
 }
 </style>

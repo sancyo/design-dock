@@ -1,56 +1,47 @@
 <template>
   <div>
     <the-page-header />
-    <dock-list />
     <nuxt />
   </div>
 </template>
 
 <script>
 import ThePageHeader from '@/layouts/ThePageHeader'
-import DockList from '@/components/organisms/DockList'
+// import DockListSetter from '@/components/template/DockListSetter'
+// import PostBundleSetter from '@/components/template/PostBundleSetter'
+// import PostContentSetter from '@/components/template/PostContentSetter'
 export default {
   components: {
-    ThePageHeader,
-    DockList
+    ThePageHeader
+    // DockListSetter,
+    // PostBundleSetter
+    // PostContentSetter
   }
 }
 </script>
 
-<style>
-html {
-  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    Roboto, 'Helvetica Neue', Arial, sans-serif;
-  font-size: 62.5%;
-  background-color: #dce1eb;
-}
-
-h1,
-h2,
-h3,
-p {
-  margin: 0;
-}
-
-ul,
-li {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-a,
-a:active {
-  text-decoration: none;
-  color: #323232;
-}
-
-.container {
-  margin: 0 auto;
-}
-
+<style scoped>
 .inner {
-  max-width: 1024px;
-  margin: 0 auto;
+  display: flex;
+  padding: 5.6rem 0;
+  justify-content: flex-end;
+  position: relative;
+}
+.dock {
+  width: 350px;
+  position: fixed;
+  left: calc((100vw - 1024px) / 2);
+}
+.label {
+  background: #383838;
+  padding: 1.2rem 1.6rem;
+  color: #fff;
+  font-size: 2rem;
+  border-radius: 5px 5px 0 0;
+}
+.right {
+  background: #fff;
+  width: 640px;
+  min-height: 800px;
 }
 </style>

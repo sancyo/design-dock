@@ -1,0 +1,11 @@
+{
+  "title": "package1のpage1です",
+  "date": "2020/05/27",
+  "bodyContent": "## page1",
+  "bodyHtml": "<h2>page1</h2>\n",
+  "dir": "content/json/package1/page1",
+  "base": "index.json",
+  "ext": ".json",
+  "sourceBase": "index.md",
+  "sourceExt": ".md"
+}
